@@ -60,31 +60,6 @@ There are three types of sessions:
 - Mixed
 - Lab
 
-<<<<<<< HEAD
-|--------+-------+-------------------------------------------+-----------------------------------------------------+---------------------+---------|
-| Module |  Date | Topic                                     | Details                                             | Python              | Type    |
-|--------+-------+-------------------------------------------+-----------------------------------------------------+---------------------+---------|
-|      1 | 09.17 | Introduction                              | Mean estimation, Classification, kNN                | nympy, pandas       | Lecture |
-|      2 | 09.24 | Learning and Generalisation               | Train/Test, XV, Bootstrapping, Simulation           | pandas, scikitlearn | Mixed   |
-|--------+-------+-------------------------------------------+-----------------------------------------------------+---------------------+---------|
-|      3 | 10.01 | Classification, Perceptron                | Margin, Regret, Gradient Descent                    | scikit learn        | Mixed   |
-|      4 | 10.08 | Neural Network                            | Logistic Regression, MLP, Backpop, Stochastic GD    | pyTorch intro       | Mixed   |
-|      5 | 10.15 | Quiz + Regression, Linear                 | Linear regression, Least Squares, Probabilistic     | pyTorch             | Mixed   |
-|      6 | 10.22 | Nonlinear Regression + Neural Network Lab | Quiz + Linear Regression & NN Lab                   | pyTorch             | Lab     |
-|--------+-------+-------------------------------------------+-----------------------------------------------------+---------------------+---------|
-|      7 | 10.29 | Probabilistic models                      | ML, MAP, Bayes, Beta-Bernoulli, Hypothesis testing  |                     | Lecture |
-|      8 | 11.05 | Generative modelling                      | Bayesian Networks, Markov Models, Tree Models, CRFs |                     | Mixed   |
-|      9 | 11.12 | Approximate Bayesian Inference            | Markov Chain Monte Carlo                            |                     | Misc    |
-|--------+-------+-------------------------------------------+-----------------------------------------------------+---------------------+---------|
-|     10 | 11.19 | Learning Theory                           | Chernoff bounds (Perceptron II)                     |                     | Lecture |
-|     11 | 11.26 | Fairness                                  |                                                     |                     | Mixed   |
-|     12 | 12.03 | Reinforcement Learning                    |                                                     |                     | Mixed   |
-|--------+-------+-------------------------------------------+-----------------------------------------------------+---------------------+---------|
-|     13 | 12.10 | Lab                                       |                                                     |                     | EXAM    |
-|--------+-------+-------------------------------------------+-----------------------------------------------------+---------------------+---------|
-|     14 | 12.17 | Mock Exam                                 |                                                     |                     | EXAM    |
-|--------+-------+-------------------------------------------+-----------------------------------------------------+---------------------+---------|
-=======
 |--------+-------+--------------------------------+-----------------------------------------------------+---------------------+---------|
 | Module |  Date | Topic                          | Details                                             | Python              | Type    |
 |--------+-------+--------------------------------+-----------------------------------------------------+---------------------+---------|
@@ -104,11 +79,10 @@ There are three types of sessions:
 |     11 | 11.26 | Fairness and Privacy           |                                                     |                     | Mixed   |
 |     12 | 12.03 | Causality                      |                                                     |                     | Mixed   |
 |--------+-------+--------------------------------+-----------------------------------------------------+---------------------+---------|
-|     13 | 12.10 | Reinforcement Learning         |                                                     |                     | EXAM    |
+|     13 | 12.10 | Reinforcement Learning         |                                                     |                     | Mixed   |
 |--------+-------+--------------------------------+-----------------------------------------------------+---------------------+---------|
-|     14 | 12.17 | Mock Exam                      |                                                     |                     | EXAM    |
+|     14 | 12.17 | Quiz II & Questions            |                                                     |                     | EXAM    |
 |--------+-------+--------------------------------+-----------------------------------------------------+---------------------+---------|
->>>>>>> 8299f65ace91c32b3c153d11d80e84cb63d5c172
 
 **** 1. Introduction, KNN
 
@@ -386,6 +360,7 @@ Complete the notebook in https://github.com/olethrosdc/machine-learning-neuch/bl
 *** Lab 7: Graphical models, generative models and simulation
 
 **** Pen-and-paper
+- Recap from Bayesian inference: Derive the normal-normal model
 - Describe the main variables of your project.
 - Define their possible dependencies with a graphical model.
 - Write down the factorisation of the joint distribution implied by your graphical model.
@@ -399,14 +374,11 @@ Complete the notebook in https://github.com/olethrosdc/machine-learning-neuch/bl
 
 You should do this in groups. One submission per group, with all member names in the notebook and/or report.
 
-*** Exercises: Gradient methods and probability
-*** Lab 8: Neural networks: advanced (can be done at 6)
-    Image classification example.
-**** Pen-and-paper
-- For a convolutional layer with $C$ channels and a $k \times k$ kernel applied to an $n \times n$ image, write the number of parameters as a function of $k, C, n$. Compare it, symbolically, to a fully-connected layer mapping the same input to the same output size. What does weight-sharing buy you structurally, and what does it cost?
-**** In-Class-Coding
-Complete Assignment 1 of this notebook: [[https://github.com/olethrosdc/machine-learning-neuch/blob/main/BSc/src/Image%20Processing/image_processing.ipynb]]  and assignment 2 of the second notebook : 
-[[https://github.com/olethrosdc/machine-learning-neuch/blob/main/BSc/src/Image%20Processing/cnn.ipynb]]
+*** Lab 9: Algorithms for Bayesian Computation
+Here we will focus on the Gaussian mixture model.
+**** Expectation Maximisation
+**** Monte Carlo Samples
+**** Markov Chain Monte Carlo: Gibbs sampler
 
 
 
